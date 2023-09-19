@@ -39,16 +39,15 @@ def function(n):
     list1=[] 
     for i in range(1,11): 
         a=i*i 
-        list1.append(a) 
     print(list1) 
 function(10)
 
  
 list = [8,2,3,0,7]
-def sumoflist (n) :
+def sumoflist (*n) :
     total = sum(list)
     print(total)
-sumoflist(5)
+sumoflist()
 
 
 def add_num(*args):
