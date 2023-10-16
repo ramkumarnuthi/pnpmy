@@ -24,8 +24,8 @@ class ShoppingCart:
         print(f"Total number of items in the cart: {len(self.cart)}")
 
 cart = ShoppingCart()
-cart.add_item("Laptop", 800, 2)
-cart.add_item("Phone", 300, 3)
+cart.add_item("Laptop", 63000, 2)
+cart.add_item("Phone", 32000, 3)
 cart.display_cart()
 
 cart.remove_item("Laptop")  
