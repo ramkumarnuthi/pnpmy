@@ -13,13 +13,11 @@ class ShoppingCart:
             if item['name'] == item_name:
                 self.total_amount -= item['price'] * item['quantity']
                 self.cart.remove(item)
-                print(f"Removed {item_name} from the cart.")
                 break
         else:
             print(f"{item_name} is not in the cart.")
 
     def display_cart(self):
-        print("Items in your cart:")
         for item in self.cart:
             print(f"{item['name']} - Price: ${item['price']} - Quantity: {item['quantity']}")
         print(f"Total amount: ${self.total_amount}")
