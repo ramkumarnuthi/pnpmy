@@ -19,7 +19,7 @@ def add_employee():
         employee_data[domain] = [employee_info]
 
 def search_by_domain():
-    domain = input("Enter domain to search for employees: ")
+    domain = input("Enter domain: ")
     
     if domain in employee_data:
         print(f"Employees in domain '{domain}':")
@@ -27,7 +27,6 @@ def search_by_domain():
             print("Name:", employee["Name"])
             print("EmpID:", employee["EmpID"])
             print("Email:", employee["Email"])
-            print("-" * 20)
     else:
         print(f"No employees found in domain '{domain}'")
 
@@ -35,15 +34,12 @@ while True:
     print("\noptions:")
     print("1. Add Employee")
     print("2. Search Employees by Domain")
-    print("3. exit")
     
-    choice = input("Enter your choice (1/2/3): ")
+    choice = input("Enter your choice (1/2): ")
     
     if choice == '1':
         add_employee()
     elif choice == '2':
         search_by_domain()
-    elif choice == '3':
-        break
     else:
         print("Invalid. Please try again.")
