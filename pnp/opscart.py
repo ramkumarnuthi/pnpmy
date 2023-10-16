@@ -19,8 +19,8 @@ class ShoppingCart:
 
     def display_cart(self):
         for item in self.cart:
-            print(f"{item['name']} - Price: ${item['price']} - Quantity: {item['quantity']}")
-        print(f"Total amount: ${self.total_amount}")
+            print(f"{item['name']} - Price: {item['price']} - Quantity: {item['quantity']}")
+        print(f"Total amount: {self.total_amount}")
         print(f"Total number of items in the cart: {len(self.cart)}")
 
 cart = ShoppingCart()
